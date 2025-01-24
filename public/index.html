@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Frontend Mentor | Intro section with dropdown navigation</title>
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center gap-12">
+                <div class="nav-brand">
+                    <img src="./images/logo.svg" alt="" />
+                </div>
+                <div class="nav-items flex items-center gap-5">
+                    <div class="relative flex items-center gap-2 group">
+                        <div class="hover:cursor-pointer">Features</div>
+                        <div>
+                            <img
+                                class="icon-arrow"
+                                src="./images/icon-arrow-down.svg"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="dropdown absolute top-full left-0 mt-2 p-4 bg-white flex flex-col gap-3 shadow-md group-hover:flex"
+                        >
+                            <div class="flex items-center justify-start gap-3">
+                                <div>
+                                    <img src="./images/icon-todo.svg" alt="" />
+                                </div>
+                                <div>Todo List</div>
+                            </div>
+                            <div class="flex items-center justify-start gap-3">
+                                <div>
+                                    <img
+                                        src="./images/icon-calendar.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div>Calendar</div>
+                            </div>
+                            <div class="flex items-center justify-start gap-3">
+                                <div>
+                                    <img
+                                        src="./images/icon-reminders.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div>Reminders</div>
+                            </div>
+                            <div class="flex items-center justify-start gap-3">
+                                <div>
+                                    <img
+                                        src="./images/icon-planning.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div>Planning</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative flex items-center gap-2">
+                        <div class="hover:cursor-pointer">Company</div>
+                        <div>
+                            <img
+                                class="icon-arrow"
+                                src="./images/icon-arrow-down.svg"
+                                alt="Arrow Down"
+                            />
+                        </div>
+                        <div
+                            class="dropdown absolute top-full left-0 mt-2 bg-white p-4 shadow-md hidden"
+                        >
+                            <div class="flex items-center justify-start gap-3">
+                                <div>History</div>
+                            </div>
+                            <div class="flex items-center justify-start gap-3">
+                                <div>Our Team</div>
+                            </div>
+                            <div class="flex items-center justify-start gap-3">
+                                <div>Blog</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hover:cursor-pointer">Careers</div>
+                    <div class="hover:cursor-pointer">About</div>
+                </div>
+            </div>
+
+            <div class="flex auth items-center gap-8">
+                <p class="hover:cursor-pointer">Login</p>
+                <button class="btn-register hover:cursor-pointer">
+                    Register
+                </button>
+            </div>
+        </nav>
+
+        <header class="flex gap-12 justify-center items-center">
+            <div class="left">
+                <h1>Make remote work</h1>
+                <p class="text">
+                    Get your team in sync, no matter your location. Streamline
+                    processes, create team rituals, and watch productivity soar.
+                </p>
+                <button class="btn font-bold hover:cursor-pointer">
+                    Learn more
+                </button>
+                <div class="flex clients gap-10">
+                    <div>
+                        <img src="./images/client-databiz.svg" alt="" />
+                    </div>
+                    <div>
+                        <img src="./images/client-audiophile.svg" alt="" />
+                    </div>
+                    <div>
+                        <img src="./images/client-meet.svg" alt="" />
+                    </div>
+                    <div>
+                        <img src="./images/client-maker.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img
+                    class="w-100"
+                    src="./images/image-hero-desktop.png"
+                    alt=""
+                />
+            </div>
+        </header>
+        <!--        -->
+
+        <!-- <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+        </div> -->
+        <script src="app.js"></script>
+    </body>
+</html>

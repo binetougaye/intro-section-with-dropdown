@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Epilogue", serif;
+}
+header {
+    padding: 46px;
+}
+nav {
+    padding: 16px;
+}
+.nav-items div {
+    color: hsl(0, 0%, 41%);
+}
+.auth {
+    color: hsl(0, 0%, 41%);
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+.text {
+    color: hsl(0, 0%, 41%);
+}
+.clients {
+    margin-top: 50px;
+}
+.btn,
+.btn-register {
+    border: 1px solid hsl(0, 0%, 8%);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+}
+/*  */
+.dropdown {
+    padding: 18px;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
