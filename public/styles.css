@@ -12,6 +12,10 @@ body {
 header {
     padding: 46px;
 }
+
+/* img {
+    width: 100% !important;
+} */
 nav {
     padding: 16px;
 }
@@ -44,14 +48,22 @@ h1 {
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
 }
+.btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
 /*  */
 .dropdown {
-    padding: 18px;
+    padding: 8px;
+    width: 150px;
     border-radius: 10px;
+}
+.dropdown div {
+    margin: 3px;
 }
 .hidden {
     display: none;
 }
 .visible {
-    display: block;
+    display: flex;
 }

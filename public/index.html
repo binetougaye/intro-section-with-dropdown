@@ -41,15 +41,15 @@
                         </div>
 
                         <div
-                            class="dropdown absolute top-full left-0 mt-2 p-4 bg-white flex flex-col gap-3 shadow-md group-hover:flex"
+                            class="dropdown absolute top-full left-0 bg-white flex flex-col shadow-lg"
                         >
-                            <div class="flex items-center justify-start gap-3">
+                            <div class="flex items-center gap-3">
                                 <div>
                                     <img src="./images/icon-todo.svg" alt="" />
                                 </div>
                                 <div>Todo List</div>
                             </div>
-                            <div class="flex items-center justify-start gap-3">
+                            <div class="flex items-center gap-3">
                                 <div>
                                     <img
                                         src="./images/icon-calendar.svg"
@@ -58,7 +58,7 @@
                                 </div>
                                 <div>Calendar</div>
                             </div>
-                            <div class="flex items-center justify-start gap-3">
+                            <div class="flex items-center gap-3">
                                 <div>
                                     <img
                                         src="./images/icon-reminders.svg"
@@ -67,7 +67,7 @@
                                 </div>
                                 <div>Reminders</div>
                             </div>
-                            <div class="flex items-center justify-start gap-3">
+                            <div class="flex items-center gap-3">
                                 <div>
                                     <img
                                         src="./images/icon-planning.svg"
@@ -89,7 +89,7 @@
                             />
                         </div>
                         <div
-                            class="dropdown absolute top-full left-0 mt-2 bg-white p-4 shadow-md hidden"
+                            class="dropdown absolute flex flex-col top-full left-[50px] mt-2 bg-white p-4 shadow-lg"
                         >
                             <div class="flex items-center justify-start gap-3">
                                 <div>History</div>
@@ -114,10 +114,137 @@
                     Register
                 </button>
             </div>
+            <!-- Menu Mobile -->
+            <img
+                id="icon-menu"
+                class="hidden"
+                src="./images/icon-menu.svg"
+                alt=""
+            />
+            <div
+                class="menu-mobile hidden fixed top-0 right-0 w-[40%] text-dark h-full bg-white shadow-lg"
+            >
+                <button class="absolute bg-white top-4 right-4">
+                    <img
+                        class="w-[100%]"
+                        src="./images/icon-close-menu.svg"
+                        alt=""
+                        id="close-menu"
+                    />
+                </button>
+                <nav class="flex flex-col p-4 gap-5">
+                    <div class="relative group">
+                        <div class="hover:cursor-pointer">Features</div>
+                        <div
+                            class="dropdown hidden group-hover:flex flex-col gap-3 mt-2"
+                        >
+                            <div class="flex items-center gap-3">
+                                <img src="./images/icon-todo.svg" alt="" />
+                                <span>Todo List</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="./images/icon-calendar.svg" alt="" />
+                                <span>Calendar</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="./images/icon-reminders.svg" alt="" />
+                                <span>Reminders</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <img src="./images/icon-planning.svg" alt="" />
+                                <span>Planning</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hover:cursor-pointer">Company</div>
+                        <div
+                            class="dropdown hidden group-hover:flex items-center flex-col gap-3 mt-2"
+                        >
+                            <div>History</div>
+                            <div>Our Team</div>
+                            <div>Blog</div>
+                        </div>
+                    </div>
+                    <div class="hover:cursor-pointer">Careers</div>
+                    <div class="hover:cursor-pointer">About</div>
+                </nav>
+            </div>
+            <!-- <div class="nav-items menu-mobile flex items-center gap-5">
+                <div class="relative flex items-center gap-2 group">
+                    <div class="hover:cursor-pointer">Features</div>
+                    <div>
+                        <img
+                            class="icon-arrow"
+                            src="./images/icon-arrow-down.svg"
+                            alt=""
+                        />
+                    </div>
+
+                    <div
+                        class="dropdown absolute top-full left-0 bg-white flex flex-col shadow-lg"
+                    >
+                        <div class="flex items-center gap-3">
+                            <div>
+                                <img src="./images/icon-todo.svg" alt="" />
+                            </div>
+                            <div>Todo List</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div>
+                                <img src="./images/icon-calendar.svg" alt="" />
+                            </div>
+                            <div>Calendar</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div>
+                                <img src="./images/icon-reminders.svg" alt="" />
+                            </div>
+                            <div>Reminders</div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div>
+                                <img src="./images/icon-planning.svg" alt="" />
+                            </div>
+                            <div>Planning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center gap-2">
+                    <div class="hover:cursor-pointer">Company</div>
+                    <div>
+                        <img
+                            class="icon-arrow"
+                            src="./images/icon-arrow-down.svg"
+                            alt="Arrow Down"
+                        />
+                    </div>
+                    <div
+                        class="dropdown absolute top-full left-[50px] mt-2 bg-white p-4 shadow-lg"
+                    >
+                        <div class="flex items-center justify-start gap-3">
+                            <div>History</div>
+                        </div>
+                        <div class="flex items-center justify-start gap-3">
+                            <div>Our Team</div>
+                        </div>
+                        <div class="flex items-center justify-start gap-3">
+                            <div>Blog</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hover:cursor-pointer">Careers</div>
+                <div class="hover:cursor-pointer">About</div>
+            </div> -->
+            <!--  -->
         </nav>
 
-        <header class="flex gap-12 justify-center items-center">
-            <div class="left">
+        <header
+            class="flex md:flex-row flex-col-reverse gap-12 justify-center items-center"
+        >
+            <div class="md:text-start text-center">
                 <h1>Make remote work</h1>
                 <p class="text">
                     Get your team in sync, no matter your location. Streamline
@@ -126,7 +253,9 @@
                 <button class="btn font-bold hover:cursor-pointer">
                     Learn more
                 </button>
-                <div class="flex clients gap-10">
+                <div
+                    class="flex md:justify-start justify-center md:items-start items-center clients gap-10"
+                >
                     <div>
                         <img src="./images/client-databiz.svg" alt="" />
                     </div>
@@ -141,7 +270,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
+            <div>
                 <img
                     class="w-100"
                     src="./images/image-hero-desktop.png"
